@@ -1,17 +1,31 @@
-body {
-  background: blue;
-
-  @media (min-width: 768px) {
-    background: linear-gradient(#e98a00, #f5aa2f);
-  }
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
 }
 
-main {
-  div {
-    color: yellow;
+html {
+  // this defines what 1rem is
+  font-size: 62.5%;
+}
 
+body {
+    box-sizing: border-box;
+    //background: blue;
+  
     @media (min-width: 768px) {
-      color: var(--div-color);
+      background: linear-gradient(#e98a00, #f5aa2f);
     }
   }
-}
+  
+  main {
+    div {
+      color: yellow;
+  
+      @media (min-width: 768px) {
+        color: var(--div-color);
+      }
+    }
+  }
