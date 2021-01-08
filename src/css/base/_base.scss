@@ -1,7 +1,7 @@
 *,
 *::after,
 *::before {
-  margin: 0;
+  margin: 0;  //verhindert ungewünschte Ränder
   padding: 0;
   box-sizing: inherit;
 }
@@ -16,16 +16,16 @@ body {
     //background: blue;
   
     @media (min-width: 768px) {
-      background: linear-gradient(#e98a00, #f5aa2f);
+      //background: linear-gradient(#e98a00, #f5aa2f);
     }
   }
   
   main {
     div {
-      color: yellow;
+      //color: yellow;
   
       @media (min-width: 768px) {
-        color: var(--div-color);
+        //color: var(--div-color);
       }
     }
   }

@@ -1,37 +1,40 @@
 .header {
     height: 65vh;
-    //background: linear-gradient(
-    //    0deg, 
-    //    rgba(0, 0, 0, 0.3), 
-    //    rgba(0, 0, 0, 0.3)), 
-    //    url(FEND-Coffee-latte-art-3.jpg);
-    //   background-size: cover;
-    //    background-position: top;
+    background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(../img/FEND-Coffee-latte-art-3.jpg);
+    background-position: center;
     position: relative;
 
-    /*position: absolute;
-    left: 0%;
-    right: 0%;
-    top: 0%;
-    bottom: 0%;*/
+    &__rectangle1 {
+        height: 55px;
+        width: 100%;
+        //background-color: red;
+        //position: -webkit-sticky;
+        position: sticky;
 
-    &__logo-box {
-        background-color: #eee;
-        position: absolute;
-        top: .1rem;
-        left: 10.3rem;
-        height: 3.5rem;
-        width: 3.5rem;
-    }
+        &--logo-box {
+            position: absolute;
+            top: 1rem;
+            left: 10.3rem;
+            
+        }
+    
+        &--logo {
+            height: 100%;
+            width: 100%;
+        }
 
-    &__logo {
-        height: 3.5rem;
-        width: 3.5rem;
+        &--navbar {
+            display: inline-block;
+        }
     }
 
     &__text-box {
         position: absolute;
-        top: 26rem;
+        top: 40%;
         left: 55.7rem;
+        height: 13.1rem;
+        width: 32.7rem;
+        text-align: center;
+        //background-color: green;
     }
 }
