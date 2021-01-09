@@ -1,0 +1,27 @@
+.company-roasting {
+    display: flex;
+    margin-bottom: 6.5rem;
+
+    &__text {
+        display: block;
+        flex-direction: column;
+        
+    }
+
+    &__img {
+        margin-left: 1rem;
+    }
+}
+
+.company-plantation {
+    display: flex;
+    margin-top: 6.5rem;
+
+    &__text {
+        display: block;
+    }
+
+    &__img {
+        margin-right: 1rem;
+    }
+}
