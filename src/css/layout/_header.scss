@@ -24,16 +24,39 @@
         }
 
         &--navbar {
-            display: inline-block;
+            padding: 0.8rem 0;
+            ul {
+                margin: 0;
+                padding: 0;
+                top: 18px;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: flex-end;
+                list-style: none;
+
+                li {
+                    display: inline;
+                    margin: 20px;
+    
+                    a {
+                        color: $color-white;
+                        text-decoration: none;
+                        
+                    }
+                    
+                
+                }
+            }
+
+            
+            
         }
     }
 
     &__text-box {
         position: absolute;
-        top: 40%;
-        left: 55.7rem;
-        height: 13.1rem;
-        width: 32.7rem;
+        top: 38%;
+        width: 100%;
         text-align: center;
         //background-color: green;
     }
