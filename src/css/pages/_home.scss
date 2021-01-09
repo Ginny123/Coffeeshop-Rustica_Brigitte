@@ -1,0 +1,16 @@
+.section-company {
+    background-color: $color-white;
+    padding: 12.4rem 10rem;
+    margin-top: 0;
+    
+
+    &__roasting {
+        display: flex;
+
+        &--text {
+            display: block;
+            flex-direction: column;
+            
+        }
+    }
+}
