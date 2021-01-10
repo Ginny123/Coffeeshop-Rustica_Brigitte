@@ -1,0 +1,15 @@
+.coffee {
+    display: flex;
+    line-height: 24px;
+
+    &__costa-rica {
+        line-height: 30px;
+        margin-right: 15px;
+        &--img {
+            padding-bottom: 20px;
+        }
+
+
+
+    }
+}

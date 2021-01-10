@@ -67,6 +67,7 @@ h3 {
 
   &__coffee {    
     color: $color-white;
+    margin-bottom: 6rem;
 
     &--1 {
       display: block;
@@ -93,4 +94,13 @@ h3 {
   line-height: 24px;
   margin-bottom: 3.5rem;
   text-align: left;
+
+  &__subhead {
+    color: $color-white;
+    line-height: 21px;
+  }
+
+  &__price {
+    color: $color-grey-med;
+  }
 }
