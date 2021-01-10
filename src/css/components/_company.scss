@@ -5,6 +5,11 @@
     &__text {
         display: block;
         flex-direction: column;
+
+        &--content1 {
+            display: block;
+        }
+
         
     }
 
