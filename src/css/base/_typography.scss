@@ -57,6 +57,40 @@ h3 {
   }
 }
 
-.heading-secondary {
-  margin-left: 5px;
+.heading-secondary {  
+  &__company {
+    display: block;
+    top: 0;
+    left: 0.4%;
+    margin: 1.5rem 0 3.5rem;
+  }
+
+  &__coffee {    
+    color: $color-white;
+
+    &--1 {
+      display: block;
+    }
+
+    &--2 {
+      display: block;
+    }
+  }
+}
+
+
+.heading-tertiary {
+  margin-top: 5rem;
+
+  &__company {
+    display: block;
+  margin: 5rem 0 3.5rem;
+  }
+}
+
+.paragraph {
+  display: block;
+  line-height: 24px;
+  margin-bottom: 3.5rem;
+  text-align: left;
 }

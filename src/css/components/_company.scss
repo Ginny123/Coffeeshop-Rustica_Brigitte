@@ -1,16 +1,14 @@
 .company-roasting {
     display: flex;
     margin-bottom: 6.5rem;
-
+    
     &__text {
-        display: block;
         flex-direction: column;
+        margin-right: 10rem;
 
         &--content1 {
-            display: block;
-        }
-
-        
+            flex-direction: row;
+        }       
     }
 
     &__img {
@@ -23,7 +21,10 @@
     margin-top: 6.5rem;
 
     &__text {
-        display: block;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        margin-left: 12rem;
     }
 
     &__img {
