@@ -12,11 +12,16 @@
     text-align: center;
     padding: 1.5rem, 5rem;
 
-    &--dark {
+    &--dark {        
+        left: 50%;
+        top: 80%;
+        transform: translate(-50%, -50%);
+    }  
+    
+    &--light {
         border-color: $color-white;
         border: 2px solid;
         left: 50%;
         top: 80%;
-        transform: translate(-50%, -50%);
-    }       
+    }
 }

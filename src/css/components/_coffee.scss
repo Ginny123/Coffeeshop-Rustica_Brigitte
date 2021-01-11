@@ -1,6 +1,9 @@
 .coffee {
     display: flex;
+    justify-content: center;
     line-height: 24px;
+    position: relative;
+    
 
     &__costa-rica {
         line-height: 30px;
@@ -8,8 +11,13 @@
         &--img {
             padding-bottom: 20px;
         }
+    }
 
-
-
+    &__btn-container {
+        position: absolute;
+        left: 500px;
+        top: 800px;
+        padding: 3rem 10rem;
+        transform: translate(-50%, -50%);        
     }
 }
