@@ -1,9 +1,9 @@
 *,
 *::after,
 *::before {
-  margin: 0;  //verhindert ungewünschte Ränder
+  margin: 0; //verhindert ungewünschte Ränder
   padding: 0;
-  box-sizing: inherit;
+  box-sizing: border-box;
 }
 
 html {
@@ -11,21 +11,21 @@ html {
   font-size: 62.5%;
 }
 
-body {
-    box-sizing: border-box;
-    //background: blue;
-  
-    @media (min-width: 768px) {
-      //background: linear-gradient(#e98a00, #f5aa2f);
-    }
-  }
-  
-  main {
-    div {
-      //color: yellow;
-  
-      @media (min-width: 768px) {
-        //color: var(--div-color);
-      }
-    }
-  }
+//body {
+//    box-sizing: border-box;
+//background: blue;
+
+//    @media (min-width: 768px) {
+//background: linear-gradient(#e98a00, #f5aa2f);
+//    }
+//  }
+
+//  main {
+//    div {
+//color: yellow;
+
+//      @media (min-width: 768px) {
+//color: var(--div-color);
+//      }
+//    }
+//  }
