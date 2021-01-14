@@ -1,0 +1,10 @@
+.origin {
+  &__textbox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 300px;
+    margin: 0 auto;
+  }
+}
