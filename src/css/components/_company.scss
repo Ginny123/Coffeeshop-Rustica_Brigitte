@@ -1,33 +1,38 @@
 .company-roasting {
-    display: flex;
-    margin-bottom: 6.5rem;
-    
-    &__text {
-        flex-direction: column;
-        margin-right: 10rem;
+  display: flex;
+  margin-bottom: 6.5rem;
 
-        &--content1 {
-            flex-direction: row;
-        }       
-    }
+  &__text {
+    flex-direction: column;
+    margin-right: 10rem;
 
-    &__img {
-        margin-left: 1rem;
+    &--content2 {
+      display: flex;
+      flex-direction: row;
+
+      &-adress {
+        margin-right: 15rem;
+      }
     }
+  }
+
+  &__img {
+    margin-left: 1rem;
+  }
 }
 
 .company-plantation {
+  display: flex;
+  margin-top: 6.5rem;
+
+  &__text {
     display: flex;
-    margin-top: 6.5rem;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-left: 12rem;
+  }
 
-    &__text {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        margin-left: 12rem;
-    }
-
-    &__img {
-        margin-right: 1rem;
-    }
+  &__img {
+    margin-right: 1rem;
+  }
 }

@@ -1,69 +1,66 @@
 .header {
-    height: 65vh;
-    background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(../img/FEND-Coffee-latte-art-3.jpg);
-    background-position: center;
-    position: relative;
+  height: 65vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url(../img/FEND-Coffee-latte-art-3.jpg);
+  background-position: center;
 
-    &__rectangle1 {
-        height: 55px;
-        width: 100%;
-        //background-color: red;
-        //position: -webkit-sticky;
-        //position: sticky;
+  &__rectangle1 {
+    height: 55px;
+    width: 100%;
 
-        &--logo-box {
-            position: absolute;
-            top: 1rem;
-            left: 10.3rem;
-            
-        }
-    
-        &--logo {
-            height: 100%;
-            width: 100%;
-        }
-
-        &--navbar {
-            padding: 0.8rem 0;
-            ul {
-                margin: 0;
-                padding: 0;
-                top: 18px;
-                display: flex;
-                flex-wrap: wrap;
-                justify-content: flex-end;
-                list-style: none;
-
-                li {
-                    display: inline;
-                    margin: 20px;
-    
-                    a {
-                        color: $color-white;
-                        text-decoration: none;
-                        
-                    }                   
-                
-                }
-            }         
-            
-        }
+    &--logo-box {
+      position: absolute;
+      top: 1rem;
+      left: 10.3rem;
     }
 
-    &__text-box {
-        position: absolute;
-        top: 38%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        text-align: center;
-        //background-color: green;
+    &--logo {
+      height: 100%;
+      width: 100%;
     }
 
-    &__btn-container {
-        position: absolute;
-        left: 50%;
-        top: 80%;
-        padding: 3rem 10rem;
-        transform: translate(-50%, -50%);        
+    &--navbar {
+      padding: 0.8rem 0;
+      ul {
+        margin: 0;
+        padding: 0;
+        top: 18px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        list-style: none;
+
+        li {
+          display: inline;
+          margin: 20px;
+
+          a {
+            color: $color-white;
+            text-decoration: none;
+          }
+        }
+      }
     }
+  }
+
+  &__text-box {
+    //top: 38%;
+    //left: 50%;
+    //transform: translate(-50%, -50%);
+    text-align: center;
+    margin: 5rem 0;
+    //background-color: green;
+  }
+
+  &__btn-container {
+    //position: absolute;
+    //left: 50%;
+    //top: 80%;
+    //padding: 3rem 10rem;
+    //transform: translate(-50%, -50%);
+  }
 }
