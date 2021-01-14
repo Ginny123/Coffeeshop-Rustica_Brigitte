@@ -13,9 +13,9 @@
     width: 100%;
 
     &--logo-box {
-      position: absolute;
       top: 1rem;
       left: 10.3rem;
+      margin-right: auto;
     }
 
     &--logo {
@@ -25,12 +25,12 @@
 
     &--navbar {
       padding: 0.8rem 0;
+      margin: 0 5%;
       ul {
         margin: 0;
         padding: 0;
         top: 18px;
         display: flex;
-        flex-wrap: wrap;
         justify-content: flex-end;
         list-style: none;
 
