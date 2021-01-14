@@ -1,23 +1,27 @@
 .coffee {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  line-height: 24px;
+  margin-bottom: 2.5rem;
+
+  &__costa-rica {
+    line-height: 30px;
+    margin-right: 15px;
+
+    &--text-box {
+      margin-top: 1rem;
+      margin-bottom: 5rem;
+    }
+
+    &--icon-coffee {
+      margin-right: 0.5rem;
+    }
+  }
+
+  &__btn-container {
+    width: 100%;
     display: flex;
     justify-content: center;
-    line-height: 24px;
-    position: relative;
-    
-
-    &__costa-rica {
-        line-height: 30px;
-        margin-right: 15px;
-        &--img {
-            padding-bottom: 20px;
-        }
-    }
-
-    &__btn-container {
-        position: absolute;
-        left: 500px;
-        top: 800px;
-        padding: 3rem 10rem;
-        transform: translate(-50%, -50%);        
-    }
+  }
 }
