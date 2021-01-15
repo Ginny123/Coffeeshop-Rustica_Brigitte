@@ -3,12 +3,12 @@
 *::before {
   margin: 0; //verhindert ungewünschte Ränder
   padding: 0;
-  box-sizing: border-box;
+  box-sizing: inherit;
 }
 
 html {
-  // this defines what 1rem is
-  font-size: 62.5%;
+  box-sizing: border-box;
+  font-size: 62.5%; // this defines what 1rem is
 }
 
 //body {
