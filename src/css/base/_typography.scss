@@ -93,7 +93,9 @@ a:visited {
   }
 
   &__footer {
+    color: $color-white;
     font-size: 4.2rem;
+    line-height: 60px;
   }
 }
 
@@ -115,5 +117,20 @@ a:visited {
   &__origin {
     color: $color-white;
     text-align: center;
+  }
+
+  &__footer-text {
+    font-size: 18px;
+    color: $color-white;
+    line-height: 21px;
+
+    &-small {
+      font-size: 14px;
+      line-height: 18px;
+    }
+  }
+
+  &__footer-shop {
+    font-size: 14px;
   }
 }

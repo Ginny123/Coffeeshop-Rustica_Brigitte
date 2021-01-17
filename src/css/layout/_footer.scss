@@ -1,6 +1,49 @@
+a {
+  line-height: 18px;
+}
+
 .footer {
-  height: 40vh;
+  height: 45vh;
   width: 100%;
   background-color: $color-black;
   color: $color-white;
+  display: flex;
+  flex-direction: column;
+
+  &__text {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__shop {
+    margin-top: 1.5rem;
+    &--adress {
+      margin-bottom: 3rem;
+    }
+  }
+
+  &__logo-box {
+    height: 7rem;
+    width: 7rem;
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  &--logo {
+    height: 100%;
+    width: 100%;
+  }
+
+  &__link {
+    display: flex;
+    flex-direction: column;
+
+    &--home {
+      margin-top: 1.5rem;
+    }
+
+    &--law {
+      margin-top: 1.5rem;
+    }
+  }
 }

@@ -1,5 +1,28 @@
-.btn:link,
-.btn:visited {
+.btn-dark:link,
+.btn-dark:visited {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $color-black;
+
+  height: 4.8rem;
+  width: 16.3rem;
+  border-radius: 5px;
+  color: $color-white;
+  font-size: 1.4rem;
+  text-decoration: none;
+
+  &:hover {
+    background-color: $color-anthra;
+  }
+
+  &:active {
+    background-color: $color-craftpaper;
+  }
+}
+
+.btn-light:link,
+.btn-light:visited {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -13,18 +36,12 @@
   font-size: 1.4rem;
   text-decoration: none;
 
-  &--dark {
-    border-color: $color-anthra;
-    border: 2px solid $color-anthra;
-    //left: 50%;
-    //top: 80%;
-    //transform: translate(-50%, -50%);
+  &:hover {
+    background-color: $color-anthra;
   }
 
-  &--light {
-    border-color: $color-white;
-    border: 2px solid $color-white;
-    padding: 15px 50px;
+  &:active {
+    background-color: $color-craftpaper;
   }
 }
 
