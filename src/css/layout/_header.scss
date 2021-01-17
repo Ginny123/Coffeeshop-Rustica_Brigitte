@@ -8,6 +8,10 @@
     url(../img/FEND-Coffee-latte-art-3.jpg);
   background-position: center;
 
+  @include respond(sm) {
+    height: 75vh;
+  }
+
   &__rectangle1 {
     height: 55px;
     width: 100%;
