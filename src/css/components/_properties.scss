@@ -9,13 +9,14 @@
 .properties {
   display: flex;
   justify-content: space-around;
-  margin: 0 20rem 5rem 15rem;
+  margin: 0 20rem;
 
   &__attributes {
     &--list {
       display: flex;
       flex-direction: column;
       justify-content: space-around;
+      padding: 0 10rem;
 
       &-element {
         display: flex;
@@ -29,6 +30,11 @@
     &--text {
       display: flex;
       flex-direction: column;
+    }
+
+    &--img {
+      max-width: 280px;
+      padding: 0 5rem;
     }
   }
 }
