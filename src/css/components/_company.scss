@@ -1,23 +1,34 @@
 .company-roasting {
   display: flex;
+  justify-content: center;
   margin-bottom: 6.5rem;
 
   &__text {
     flex-direction: column;
     margin-right: 10rem;
+    max-width: 510px;
+    //width: 100%;
+    //height: auto;
 
     &--content2 {
       display: flex;
       flex-direction: row;
+      justify-content: flex-start;
+      max-width: 500px;
 
       &-adress {
-        margin-right: 15rem;
+        padding-right: 25%;
       }
     }
   }
 
   &__img {
     margin-left: 1rem;
+
+    &--jpg {
+      width: 100%;
+      height: auto;
+    }
   }
 }
 
@@ -29,11 +40,17 @@
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    margin-left: 12rem;
+    padding-left: 8%;
+    max-width: 500px;
   }
 
   &__img {
     margin-right: 1rem;
+
+    &--jpg {
+      width: 100%;
+      height: auto;
+    }
   }
 
   a:link,
