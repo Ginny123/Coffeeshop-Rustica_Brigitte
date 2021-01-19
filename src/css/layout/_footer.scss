@@ -9,10 +9,11 @@ a {
   color: $color-white;
   display: flex;
   flex-direction: column;
+  justify-content: center;
 
   &__text {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
   }
 
   &__shop {
@@ -25,7 +26,7 @@ a {
   &__logo-box {
     height: 7rem;
     width: 7rem;
-    margin-left: 1rem;
+    margin-left: 13rem;
     margin-bottom: 1rem;
   }
 
