@@ -9,23 +9,25 @@
 html {
   box-sizing: border-box;
   font-size: 62.5%; // this defines what 1rem is
+
+  @include respond(sm) {
+    font-size: 50%;
+  }
+
+  @include respond(md) {
+    font-size: 50%; // 1 rem = 8px, 8/16 = 50%
+  }
+  
+  @include respond(lg) {
+    font-size: 56,25%; // 1 rem = 9px, 9/16 = 50%
+  }
+
+  @include respond(xl) {
+    font-size: 62.5%; // 1 rem = 10px, 8/16 = 62.5%
+  }
+
+  @include respond(xxl) {
+    font-size: 75%; // 1 rem = 12px, 12/16 = 75%
+  }
 }
 
-//body {
-//    box-sizing: border-box;
-//background: blue;
-
-//    @media (min-width: 768px) {
-//background: linear-gradient(#e98a00, #f5aa2f);
-//    }
-//  }
-
-//  main {
-//    div {
-//color: yellow;
-
-//      @media (min-width: 768px) {
-//color: var(--div-color);
-//      }
-//    }
-//  }

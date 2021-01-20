@@ -1,36 +1,39 @@
+// MEDIA QUERY MANAGER
+
+
 @mixin respond($breakpoint) {
-  //576px
+  
   @if $breakpoint == sm {
     @media (min-width: 36em) {
       @content;
     }
-  }
+  } //576px
 
-  //768px
-  @if $breakpoint == md {
+  
+  @else if $breakpoint == md {
     @media (min-width: 48em) {
       @content;
     }
-  }
+  } //768px
 
-  //992px
-  @if $breakpoint == lg {
+  
+  @else if $breakpoint == lg {
     @media (min-width: 62em) {
       @content;
     }
-  }
+  } //992px
 
-  //1200px
-  @if $breakpoint == xl {
+  
+  @else if $breakpoint == xl {
     @media (min-width: 75em) {
       @content;
     }
-  }
+  } //1200px
 
-  //1920px
-  @if $breakpoint == xxl {
+  
+  @else if $breakpoint == xxl {
     @media (min-width: 120em) {
       @content;
     }
-  }
+  } //1920px
 }
