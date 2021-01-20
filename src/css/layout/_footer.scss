@@ -10,14 +10,20 @@ a {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: flex-start;
 
   &__text {
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-start;
+  }
+
+  &__heading {
+    padding-right: 17rem;
   }
 
   &__shop {
     margin-top: 1.5rem;
+    padding-right: 18rem;
     &--adress {
       margin-bottom: 3rem;
     }
@@ -26,7 +32,7 @@ a {
   &__logo-box {
     height: 7rem;
     width: 7rem;
-    margin-left: 13rem;
+    margin-left: 1rem;
     margin-bottom: 1rem;
   }
 
@@ -41,6 +47,7 @@ a {
 
     &--home {
       margin-top: 1.5rem;
+      padding-right: 25rem;
     }
 
     &--law {
