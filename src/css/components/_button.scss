@@ -46,6 +46,12 @@
 }
 
 .btn-text {
+  &__company {
+    @include respond(lg) {
+      display: none;
+    }
+  }
+
   &__origin {
     text-align: center;
     color: $color-white;

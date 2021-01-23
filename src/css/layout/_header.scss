@@ -9,9 +9,9 @@
   background-position: center;
   position: relative;
 
-  //@include respond(sm) {
-  //   height: 75vh;
-  //}
+  @include respond(sm) {
+    height: 75vh;
+  }
 
   &__rectangle1 {
     height: 55px;

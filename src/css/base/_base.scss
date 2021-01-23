@@ -15,11 +15,11 @@ html {
   }
 
   @include respond(md) {
-    font-size: 50%; // 1 rem = 8px, 8/16 = 50%
+    font-size: 43.75%; // 1 rem = 7px, 8/16 = 50%
   }
-  
+
   @include respond(lg) {
-    font-size: 56,25%; // 1 rem = 9px, 9/16 = 50%
+    font-size: 50%; // 1 rem = 8px, 9/16 = 50%
   }
 
   @include respond(xl) {
@@ -30,4 +30,3 @@ html {
     font-size: 75%; // 1 rem = 12px, 12/16 = 75%
   }
 }
-

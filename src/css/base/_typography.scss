@@ -64,9 +64,10 @@ a:visited {
   &__company {
     display: block;
     font-size: 4.8rem;
+    line-height: 60px;
     top: 0;
     left: 0.4%;
-    margin: 1.5rem 0 6rem;
+    margin-bottom: 3rem;
   }
 
   &__coffee {
@@ -84,6 +85,10 @@ a:visited {
   &__company {
     display: block;
     margin: 5rem 0 3.5rem;
+
+    @include respond(xl) {
+      margin: 2rem 0 3.5rem;
+    }
   }
 
   &__origin {

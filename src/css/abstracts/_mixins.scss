@@ -1,36 +1,30 @@
 // MEDIA QUERY MANAGER
 
-
 @mixin respond($breakpoint) {
-  
   @if $breakpoint == sm {
-    @media (min-width: 36em) {
+    @media (max-width: 36em) {
       @content;
     }
   } //576px
 
-  
   @else if $breakpoint == md {
-    @media (min-width: 48em) {
+    @media (max-width: 48em) {
       @content;
     }
   } //768px
 
-  
   @else if $breakpoint == lg {
-    @media (min-width: 62em) {
+    @media (max-width: 62em) {
       @content;
     }
   } //992px
 
-  
   @else if $breakpoint == xl {
-    @media (min-width: 75em) {
+    @media (max-width: 75em) {
       @content;
     }
   } //1200px
 
-  
   @else if $breakpoint == xxl {
     @media (min-width: 120em) {
       @content;
