@@ -9,17 +9,29 @@
 .properties {
   display: flex;
   justify-content: space-around;
-  margin: 0 20rem;
 
-  &__attributes {
+  @include respond(sm) {
+    flex-direction: column;
+  }
+
+  & &__attributes {
     &--list {
       display: flex;
       flex-direction: column;
       justify-content: space-around;
-      padding: 0 10rem;
+      width: 40%;
+
+      @include respond(sm) {
+        flex-direction: row;
+        //flex-wrap: wrap;
+        //flex: 1 1 0px;
+      }
 
       &-element {
         display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
       }
     }
 
@@ -30,11 +42,20 @@
     &--text {
       display: flex;
       flex-direction: column;
+
+      @include respond(sm) {
+        text-align: center;
+      }
     }
 
     &--img {
-      max-width: 280px;
-      padding: 0 5rem;
+      width: 60%;
     }
   }
+}
+
+.costa-rica--img {
+  width: 80%;
+  height: auto;
+  padding-left: 20%;
 }
