@@ -1,5 +1,9 @@
 .heading-secondary__map {
   padding: 5rem 10rem;
+
+  @include respond(md) {
+    padding: 5rem 2rem;
+  }
 }
 
 iframe {
