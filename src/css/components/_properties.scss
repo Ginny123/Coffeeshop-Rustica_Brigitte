@@ -10,7 +10,7 @@
   display: flex;
   justify-content: space-around;
 
-  @include respond(sm) {
+  @include respond(md) {
     flex-direction: column;
     margin-bottom: 4rem;
   }
@@ -21,7 +21,7 @@
       flex-direction: column;
       justify-content: space-between;
 
-      @include respond(sm) {
+      @include respond(md) {
         flex-direction: row;
         flex-wrap: wrap;
         //flex: 1 0 auto;
@@ -32,7 +32,7 @@
         //flex-wrap: wrap;
         align-items: flex-start;
 
-        @include respond(sm) {
+        @include respond(md) {
           flex-direction: column;
           justify-content: space-between;
           align-items: center;
@@ -46,7 +46,7 @@
     &--logo {
       margin: 0 30px;
 
-      @include respond(sm) {
+      @include respond(md) {
         padding: 20px 0;
       }
     }
@@ -55,14 +55,14 @@
       display: flex;
       flex-direction: column;
 
-      @include respond(sm) {
+      @include respond(md) {
         text-align: center;
         padding: 10px;
       }
     }
 
     &--btn-container {
-      @include respond(sm) {
+      @include respond(md) {
         margin: 0 auto;
       }
     }
