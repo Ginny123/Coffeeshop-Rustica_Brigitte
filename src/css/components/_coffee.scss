@@ -1,14 +1,22 @@
 .coffee {
   display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
+  justify-content: space-between;
   line-height: 24px;
   margin-bottom: 2.5rem;
 
+  @include respond(md) {
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
   &__costa-rica {
     line-height: 30px;
-    margin: 15px;
-    max-width: 280px;
+    margin: 1rem;
+    width: calc(23% - 1rem);
+
+    @include respond(md) {
+      width: calc(40% - 3rem);
+    }
 
     &--img {
       max-width: 100%;
