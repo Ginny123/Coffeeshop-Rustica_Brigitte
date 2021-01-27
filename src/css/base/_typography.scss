@@ -102,6 +102,11 @@ a:visited {
     color: $color-white;
     font-size: 4.2rem;
     line-height: 60px;
+
+    @include respond(md) {
+      font-size: 2.4rem;
+      line-height: 28px;
+    }
   }
 }
 
