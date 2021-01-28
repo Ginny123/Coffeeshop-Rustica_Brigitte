@@ -21,6 +21,10 @@
   background-color: $color-white;
   padding: 1.73% 6.94%;
   margin-top: 0;
+
+  @include respond(sm) {
+    padding: 1.73% 0;
+  }
 }
 
 .section-map {

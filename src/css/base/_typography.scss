@@ -50,6 +50,11 @@ a:visited {
     font-size: 9.6rem;
     font-weight: 900;
     line-height: 110px;
+
+    @include respond(md) {
+      font-size: 6.4rem;
+      line-height: 75px;
+    }
   }
 
   &--sub {
