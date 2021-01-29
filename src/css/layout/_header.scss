@@ -11,14 +11,10 @@
 
   @include respond(md) {
     height: 75vh;
-
-    @include respond(sm) {
-      height: 75vh;
-      background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-        url(../img/FEND-Coffee-latte-art-3_small.jpg);
-      background-position: center;
-      background-size: cover;
-    }
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+      url(../img/FEND-Coffee-latte-art-3_small.jpg);
+    background-position: center;
+    background-size: cover;
   }
 
   &__rectangle1 {
@@ -35,6 +31,17 @@
     }
 
     &--logo {
+      height: 100%;
+      width: 100%;
+    }
+
+    &--burger-box {
+      top: 1rem;
+      right: 10.3rem;
+      margin-left: auto;
+    }
+
+    &--burgermenu {
       height: 100%;
       width: 100%;
     }
@@ -61,6 +68,10 @@
         }
       }
 
+      @include respond(md) {
+        display: none;
+      }
+
       &-animatedli::after {
         display: block;
         content: "";
@@ -74,6 +85,63 @@
       &-animatedli:hover::after {
         width: 100%;
       }
+    }
+
+    &--mobnavbar {
+      padding: 0.8rem 0;
+      margin: 0 5%;
+      ul {
+        margin: 0;
+        padding: 0;
+        top: 18px;
+        display: flex;
+        justify-content: space-between;
+        list-style: none;
+
+        li {
+          display: inline-block;
+          margin: 20px;
+
+          a {
+            color: $color-white;
+            text-decoration: none;
+          }
+        }
+      }
+
+      @include respond(md) {
+        display: none;
+      }
+    }
+  }
+
+  &__mobnavbar {
+    &--list {
+      height: 100vh;
+      width: 100%;
+      background-color: $color-black;
+
+      ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        margin-top: 25rem;
+        margin-left: 6rem;
+        //margin-bottom: 25rem;
+      }
+    }
+
+    &--burgerclose-box {
+      top: 2rem;
+      right: 2.65rem;
+      height: 1.8rem;
+      width: 1.8rem;
+      margin-left: auto;
+    }
+
+    &--burgerclose-img {
+      height: 100%;
+      width: 100%;
     }
   }
 
