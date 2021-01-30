@@ -118,10 +118,17 @@ a:visited {
     line-height: 3.7rem;
     font-weight: bold;
   }
+
+  &__cafe {
+    font-size: 4.2rem;
+    line-height: 50px;
+    padding-bottom: 3rem;
+  }
 }
 
 .paragraph {
   display: block;
+  font-size: 1.8rem;
   line-height: 24px;
   margin-bottom: 3.5rem;
   text-align: left;
