@@ -1,0 +1,50 @@
+.production {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 8.68% 6.94%;
+
+  &__region {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 8.68% 6.94%;
+
+    &--text {
+      display: block;
+      width: 40%;
+    }
+
+    &--img {
+      width: 60%;
+      padding-top: 25rem;
+
+      &-jpg {
+        height: 100%;
+        width: auto;
+      }
+    }
+  }
+
+  &__worker {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 14.23% 6.94%;
+
+    &--img {
+      width: 60%;
+      padding-top: 15rem;
+      padding-bottom: 8.68%;
+
+      &-jpg {
+        height: 100%;
+        width: auto;
+      }
+    }
+
+    &--text {
+      display: block;
+      width: 40%;
+    }
+  }
+}

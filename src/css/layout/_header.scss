@@ -94,7 +94,7 @@
         margin: 0;
         padding: 0;
         top: 18px;
-        display: flex;
+        display: none;
         justify-content: space-between;
         list-style: none;
 
@@ -110,7 +110,12 @@
       }
 
       @include respond(md) {
-        display: none;
+        display: flex;
+        z-index: 5000;
+
+        ul {
+          display: flex;
+        }
       }
     }
   }

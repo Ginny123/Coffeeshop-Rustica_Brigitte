@@ -4,6 +4,7 @@
 @import "base/base";
 @import "base/typography";
 
+@import "components/beans";
 @import "components/button";
 @import "components/cafe";
 @import "components/company";
@@ -11,11 +12,14 @@
 @import "components/gallery";
 @import "components/map";
 @import "components/origin";
+@import "components/production";
 @import "components/properties";
+@import "components/video";
 @import "components/hero";
 
 @import "pages/home";
 @import "pages/cafe-page";
+@import "pages/origin-page";
 
 @import "layout/header.scss";
 @import "layout/footer";
