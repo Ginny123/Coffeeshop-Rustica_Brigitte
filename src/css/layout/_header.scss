@@ -98,6 +98,10 @@
         justify-content: space-between;
         list-style: none;
 
+        @include respond(md) {
+          display: flex;
+        }
+
         li {
           display: inline-block;
           margin: 20px;
@@ -106,15 +110,6 @@
             color: $color-white;
             text-decoration: none;
           }
-        }
-      }
-
-      @include respond(md) {
-        display: flex;
-        z-index: 5000;
-
-        ul {
-          display: flex;
         }
       }
     }
