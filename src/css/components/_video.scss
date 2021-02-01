@@ -1,10 +1,5 @@
-.origin-coffee {
-  &__video {
-    height: 70vh;
-
-    &--file {
-      width: 100%;
-      height: auto;
-    }
-  }
+.origin-video {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
