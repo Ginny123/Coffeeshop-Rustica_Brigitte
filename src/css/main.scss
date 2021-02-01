@@ -10,6 +10,7 @@
 @import "components/company";
 @import "components/coffee";
 @import "components/gallery";
+@import "components/impressum";
 @import "components/map";
 @import "components/origin";
 @import "components/production";
@@ -23,7 +24,3 @@
 
 @import "layout/header.scss";
 @import "layout/footer";
-
-:root {
-  --div-color: red;
-}
