@@ -1,3 +1,7 @@
 .impressum-text {
   margin: 22rem 31rem 12.5rem;
+
+  @include respond(md) {
+    margin: 13rem 2.5rem 4rem 2.5rem;
+  }
 }
