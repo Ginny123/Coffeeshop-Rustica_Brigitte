@@ -12,12 +12,17 @@
   font-size: 1.4rem;
   text-decoration: none;
 
+  box-shadow: inset 0 0 0 0 $color-anthra;
+  transition: ease-out 0.5s;
+
   &:hover {
-    background-color: $color-anthra;
+    box-shadow: inset 16.3rem 0 0 0 $color-anthra;
+    //background-color: $color-anthra;
   }
 
   &:active {
-    background-color: $color-craftpaper;
+    box-shadow: inset 16.3rem 0 0 0 $color-craftpaper;
+    //background-color: $color-craftpaper;
   }
 }
 
@@ -36,12 +41,19 @@
   font-size: 1.4rem;
   text-decoration: none;
 
+  box-shadow: inset 0 0 0 0 $color-anthra;
+  transition: ease-out 0.5s;
+
   &:hover {
-    background-color: $color-anthra;
+    box-shadow: inset 16.3rem 0 0 0 $color-anthra;
+    //border: none;
+    //background-color: $color-anthra;
   }
 
   &:active {
-    background-color: $color-craftpaper;
+    box-shadow: inset 16.3rem 0 0 0 $color-craftpaper;
+    border: none;
+    //background-color: $color-craftpaper;
   }
 }
 
