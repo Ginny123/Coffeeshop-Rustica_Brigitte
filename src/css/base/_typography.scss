@@ -93,7 +93,8 @@ a:visited {
 
   &__impressum {
     @include roboto-900(4.8);
-    padding-bottom: 5rem;
+    padding-bottom: 3rem;
+    padding-top: 2rem;
 
     &:nth-child(2) {
       padding-bottom: 1rem;
@@ -134,8 +135,9 @@ a:visited {
   }
 
   &__mobnavbar {
-    line-height: 3.7rem;
+    @include roboto-900(3.2);
     font-weight: bold;
+    // line-height: 3.7rem;
   }
 
   &__cafe {
@@ -152,6 +154,11 @@ a:visited {
 
   &__impressum {
     @include roboto-900(4.2);
+
+    &--adress {
+      padding-bottom: 4rem;
+      padding-top: 3rem;
+    }
   }
 }
 
