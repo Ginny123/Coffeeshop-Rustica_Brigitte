@@ -20,14 +20,13 @@
       </div>
 
       <form method="GET" action="#" class="contact__formular">
-        <div class="contact__--formularinput">
+        <div class="contact__--formular--elements">
           <div class="contact__formular--input">
             <p class="paragraph__contact">Name*</p>
             <input
-              class="form-control mb-10"
+              class="form-control contact__formular--inputField"
               type="text"
               name="name"
-              class="contact__formular--input-field"
               placeholder="Name"
             />
           </div>
@@ -35,7 +34,7 @@
           <div class="contact__formular--input">
             <p class="paragraph__contact">E-Mail*</p>
             <input
-              class="form-control"
+              class="formControl contact__formular--inputField"
               type="email"
               name="email"
               class="contact__formular--input-field"
@@ -43,13 +42,12 @@
             />
           </div>
 
-          <div class="contact__--formular--input">
+          <div class="contact__formular--input">
             <p class="paragraph__contact">Telefonnummer</p>
             <input
-              class="form-control"
+              class="contact__formular--formControl contact__formular--inputField"
               type="text"
               name="telefon"
-              class="contact__formular--input-field"
               placeholder="Telefonnummer"
             />
           </div>
@@ -59,10 +57,9 @@
           <div class="contact__formular--input">
             <p class="paragraph__contact">Nachricht</p>
             <textarea
-              class="form-control"
+              class="formControl contact__formular--inputField"
               type="text"
               name="nachricht"
-              class="contact__formular--input-field"
               placeholder="Was hast Du auf dem Herzen?"
             />
           </div>
@@ -71,6 +68,7 @@
         </div>
       </form>
     </div>
+    <script src="../js/contact.js"></script>
   </body>
   <include src="footer.html"></include>
 </html>

@@ -1,3 +1,21 @@
+// #header-page {
+//   position: relative;
+//   left: 0%;
+//   overflow-x: hidden;
+
+//   &.header {
+//     &__mobnavbar {
+//       &--open {
+//         overflow-x: visible;
+//         left: 0%; // -50%
+//       }
+//     }
+//   }
+// }
+body {
+  overflow-x: hidden;
+}
+
 .header {
   height: 65vh;
   display: flex;
@@ -6,8 +24,10 @@
   align-items: center;
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
     url(../img/FEND-Coffee-latte-art-3.jpg);
-  background-position: center;
+  background-position: center; //50% 100% o. 50% 0%
   background-size: cover;
+  position: relative;
+  //overflow-x: visible;
 
   @include respond(md) {
     height: 75vh;
@@ -17,133 +37,6 @@
     background-size: cover;
   }
 
-  &__rectangle1 {
-    height: 55px;
-    width: 100%;
-    top: 0;
-    left: 0;
-    position: fixed;
-
-    &--logo-box {
-      top: 1rem;
-      left: 10.3rem;
-      margin-right: auto;
-    }
-
-    &--logo {
-      height: 100%;
-      width: 100%;
-    }
-
-    &--burger-box {
-      top: 1rem;
-      right: 10.3rem;
-      margin-left: auto;
-    }
-
-    &--burgermenu {
-      height: 100%;
-      width: 100%;
-    }
-
-    &--navbar {
-      padding: 0.8rem 0;
-      margin: 0 5%;
-      ul {
-        margin: 0;
-        padding: 0;
-        top: 18px;
-        display: flex;
-        justify-content: flex-end;
-        list-style: none;
-
-        li {
-          display: inline-block;
-          margin: 20px;
-
-          a {
-            color: $color-white;
-            text-decoration: none;
-          }
-        }
-      }
-
-      @include respond(md) {
-        display: none;
-      }
-
-      &-animatedli::after {
-        display: block;
-        content: "";
-        margin: 0;
-        width: 0;
-        height: 1px;
-        background: $color-white;
-        transition: all 0.4s;
-      }
-
-      &-animatedli:hover::after {
-        width: 100%;
-      }
-    }
-
-    &--mobnavbar {
-      padding: 0.8rem 0;
-      margin: 0 5%;
-      ul {
-        margin: 0;
-        padding: 0;
-        top: 18px;
-        display: none;
-        justify-content: space-between;
-        list-style: none;
-
-        @include respond(md) {
-          display: flex;
-        }
-
-        li {
-          display: inline-block;
-          margin: 20px;
-
-          a {
-            color: $color-white;
-            text-decoration: none;
-          }
-        }
-      }
-    }
-  }
-
-  &__mobnavbar {
-    &--list {
-      height: auto;
-      width: 100%;
-      background-color: $color-black;
-      left: 100%;
-
-      ul {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        margin-top: 50rem;
-      }
-    }
-
-    &--burgerclose-box {
-      top: 2rem;
-      right: 2.65rem;
-      height: 1.8rem;
-      width: 1.8rem;
-      margin-left: auto;
-    }
-
-    &--burgerclose-img {
-      height: 100%;
-      width: 100%;
-    }
-  }
-
   &__text-box {
     text-align: center;
     margin: 10rem auto;
@@ -151,5 +44,123 @@
     @include respond(md) {
       margin: 12rem auto;
     }
+  }
+}
+.navbar {
+  height: 55px;
+  width: 100vw;
+  top: 0;
+  left: 0;
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.8rem 5%;
+
+  &__logo-box {
+    top: 1rem;
+    left: 10.3rem;
+    height: 3.5rem;
+    width: 3.5rem;
+    margin-right: auto;
+  }
+
+  &__logo {
+    height: 100%;
+    width: 100%;
+  }
+
+  &__burger-box {
+    top: 1rem;
+    right: 10.3rem;
+    display: none;
+    margin-left: auto;
+    cursor: pointer; //clickable
+
+    @include respond(md) {
+      display: flex;
+    }
+  }
+
+  &__burgermenu {
+    height: 100%;
+    width: 100%;
+  }
+
+  &__list-box {
+    display: inline-block;
+
+    @include respond(md) {
+      display: none;
+    }
+
+    ul {
+      margin: 0;
+      padding: 0;
+      top: 18px;
+      display: flex;
+
+      li {
+        list-style: none;
+
+        a {
+          color: $color-white;
+          text-decoration: none;
+          display: block;
+          padding: 2rem;
+        }
+      }
+    }
+  }
+
+  &__animatedli::after {
+    display: block;
+    content: "";
+    margin: 0;
+    width: 0;
+    height: 1px;
+    background: $color-white;
+    transition: all 0.4s;
+  }
+
+  &__animatedli:hover::after {
+    width: 100%;
+  }
+}
+
+.mobnavbar {
+  position: absolute;
+  left: 100%; //100%
+  top: 0;
+  bottom: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: $color-black;
+  padding: 2.2rem 6.94%;
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    height: 80%;
+  }
+
+  &-open {
+    overflow-x: visible;
+    left: 0%;
+  }
+
+  &__burgerclose-box {
+    top: 2rem;
+    right: 2.65rem;
+    height: 10%;
+    width: 1.8rem;
+    margin-left: auto;
+  }
+
+  &__burgerclose-img {
+    height: 100%;
+    width: 100%;
   }
 }
