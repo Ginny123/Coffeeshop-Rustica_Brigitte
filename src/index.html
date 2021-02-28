@@ -11,10 +11,8 @@
     <title>Rustica | Die ultimative Kaffeerösterei in Kiel</title>
   </head>
 
-  <body>
-    
-    <header class="header mobnavbar-open">
-      
+  <body>    
+    <header class="header">      
       <nav class="navbar">
         <div class="navbar__logo-box">
           <a href="index.html">
@@ -22,15 +20,13 @@
           </a>
         </div>
 
-        <div class="navbar__burger-box btn-toggle">
-          <a id="toggle-btn" href="#">
+        <button class="navbar__burger-box btn-toggle-open">
             <img
               src="img/Burger Menu.svg"
               alt="Burger Menu"
               class="navbar__burgermenu"
             />
-          </a>
-        </div>
+        </button>
 
         <div class="navbar__list-box">
           <ul>
@@ -54,14 +50,14 @@
         </div>
       </nav>
 
-      <nav class="mobnavbar">          
-          <div class="mobnavbar__burgerclose-box btn-toggle">
+      <nav class="mobnavbar mobnavbar-open">     
+          <button class="mobnavbar__burgerclose-box btn-toggle-close">
             <img
               src="img/Burger_Menu_close.svg"
               alt="Navbar benden"
               class="mobnavbar__burgerclose-img"
             />
-          </div>
+          </button>
 
           <div class="mobnavbar__list"></div>
             <ul>

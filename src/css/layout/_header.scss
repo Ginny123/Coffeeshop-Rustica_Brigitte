@@ -27,7 +27,8 @@ body {
   background-position: center; //50% 100% o. 50% 0%
   background-size: cover;
   position: relative;
-  //overflow-x: visible;
+  // transition: 1s all;
+  // transform: translate(100%, 0%);
 
   @include respond(md) {
     height: 75vh;
@@ -130,13 +131,20 @@ body {
 
 .mobnavbar {
   position: absolute;
-  left: 100%; //100%
+  left: 100%;
   top: 0;
   bottom: 0;
   width: 100vw;
   height: 100vh;
   background-color: $color-black;
   padding: 2.2rem 6.94%;
+  transition: 0.5s all;
+  transform: translateX(100%);
+
+  &-open {
+    // left: 0%; // Erik fragen
+    transform: translateX(0%);
+  }
 
   ul {
     display: flex;
@@ -144,11 +152,6 @@ body {
     align-items: flex-start;
     justify-content: center;
     height: 80%;
-  }
-
-  &-open {
-    overflow-x: visible;
-    left: 0%;
   }
 
   &__burgerclose-box {
