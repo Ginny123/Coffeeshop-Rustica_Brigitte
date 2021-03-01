@@ -212,3 +212,18 @@ a:visited {
     padding-bottom: 2rem;
   }
 }
+
+label {
+  @include roboto-400(1.8);
+  color: $color-anthra;
+}
+
+input,
+textarea {
+  @include roboto-400(1.8);
+}
+
+::placeholder {
+  @include roboto-400(1.8);
+  color: $color-grey-medlight;
+}

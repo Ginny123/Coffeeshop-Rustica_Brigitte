@@ -20,9 +20,9 @@
       </div>
 
       <form method="GET" action="#" class="contact__formular">
-        <div class="contact__--formular--elements">
+        <div class="contact__--formular--elements"></div>
           <div class="contact__formular--input">
-            <p class="paragraph__contact">Name*</p>
+            <label for="name">Name*</label>
             <input
               class="form-control contact__formular--inputField"
               type="text"
@@ -32,7 +32,7 @@
           </div>
 
           <div class="contact__formular--input">
-            <p class="paragraph__contact">E-Mail*</p>
+            <label for="mail">E-Mail*</label>            
             <input
               class="formControl contact__formular--inputField"
               type="email"
@@ -43,7 +43,7 @@
           </div>
 
           <div class="contact__formular--input">
-            <p class="paragraph__contact">Telefonnummer</p>
+            <label for="phone">Telefonnummer</label>            
             <input
               class="contact__formular--formControl contact__formular--inputField"
               type="text"
@@ -55,7 +55,7 @@
           betreff
 
           <div class="contact__formular--input">
-            <p class="paragraph__contact">Nachricht</p>
+            <label for="msg">Deine Nachricht</label>            
             <textarea
               class="formControl contact__formular--inputField"
               type="text"
@@ -64,7 +64,10 @@
             />
           </div>
           Datenschutzerklärung
-          <button type="submit" class="btn">abschicken</button> Button
+          <div class="button">
+            <button type="submit" class="btn">abschicken</button>
+          </div>
+          
         </div>
       </form>
     </div>

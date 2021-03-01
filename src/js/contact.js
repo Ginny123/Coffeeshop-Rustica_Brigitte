@@ -1,7 +1,7 @@
 const contactForm = document.querySelector('.contact__formular');
 
 contactForm.addEventListener('click', (event) => {
-    e.preventDefault();
-})
+    event.preventDefault();
+});
 
-console.log("Hello World!")
+console.log("Hello World!");
