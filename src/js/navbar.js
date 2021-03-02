@@ -25,15 +25,17 @@ let isMenuOpen = false;
 export default toggleNavbar
 
 
-window.onscroll = function () { 
-    const myNav = document.querySelector(".navbar");
-    console.log("Let's roll!")
-    if (document.body.scrollTop >= 200 ) {
-        myNav.classList.add("nav-colored");
-        myNav.classList.remove("nav-transparent");
-    } 
-    else {
-        myNav.classList.add("nav-transparent");
-        myNav.classList.remove("nav-colored");
-    }
-}
+// window.onscroll = function () { 
+//     const myNav = document.querySelector(".navbar");
+//     console.log("Let's roll!")
+//     if (document.body.scrollTop >= 200 ) {
+//         myNav.classList.add("nav-colored");
+//         myNav.classList.remove("nav-transparent");
+//     } 
+//     else {
+//         myNav.classList.add("nav-transparent");
+//         myNav.classList.remove("nav-colored");
+//     }
+// .nav-colored { background-color:#000; }
+// .nav-transparent { background-color:transparent;}
+// }

@@ -1,169 +1,51 @@
-// #header-page {
-//   position: relative;
-//   left: 0%;
-//   overflow-x: hidden;
-
-//   &.header {
-//     &__mobnavbar {
-//       &--open {
-//         overflow-x: visible;
-//         left: 0%; // -50%
-//       }
-//     }
-//   }
-// }
 body {
   overflow-x: hidden;
 }
 
 .header {
   height: 65vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-    url(../img/FEND-Coffee-latte-art-3.jpg);
+  // display: flex;
+  // flex-direction: column;
+  // justify-content: center;
+  // align-items: center;
+  // background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+  //   url(../img/FEND-Coffee-latte-art-3.jpg);
   background-position: center; //50% 100% o. 50% 0%
   background-size: cover;
   position: relative;
-  // transition: 1s all;
-  // transform: translate(100%, 0%);
 
-  @include respond(md) {
-    height: 75vh;
+  &__rustica {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-      url(../img/FEND-Coffee-latte-art-3_small.jpg);
-    background-position: center;
-    background-size: cover;
-  }
-
-  &__text-box {
-    text-align: center;
-    margin: 10rem auto;
+      url(../img/FEND-Coffee-latte-art-3.jpg);
 
     @include respond(md) {
-      margin: 12rem auto;
-    }
-  }
-}
-.navbar {
-  height: 55px;
-  width: 100vw;
-  top: 0;
-  left: 0;
-  position: fixed;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0.8rem 5%;
-
-  &__logo-box {
-    top: 1rem;
-    left: 10.3rem;
-    height: 3.5rem;
-    width: 3.5rem;
-    margin-right: auto;
-  }
-
-  &__logo {
-    height: 100%;
-    width: 100%;
-  }
-
-  &__burger-box {
-    top: 1rem;
-    right: 10.3rem;
-    display: none;
-    margin-left: auto;
-    cursor: pointer; //clickable
-
-    @include respond(md) {
-      display: flex;
-    }
-  }
-
-  &__burgermenu {
-    height: 100%;
-    width: 100%;
-  }
-
-  &__list-box {
-    display: inline-block;
-
-    @include respond(md) {
-      display: none;
+      height: 75vh;
+      background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+        url(../img/FEND-Coffee-latte-art-3_small.jpg);
+      background-position: center;
+      background-size: cover;
     }
 
-    ul {
-      margin: 0;
-      padding: 0;
-      top: 18px;
-      display: flex;
+    &__text-box {
+      text-align: center;
+      margin: 10rem auto;
 
-      li {
-        list-style: none;
-
-        a {
-          color: $color-white;
-          text-decoration: none;
-          display: block;
-          padding: 2rem;
-        }
+      @include respond(md) {
+        margin: 12rem auto;
       }
     }
   }
 
-  &__animatedli::after {
-    display: block;
-    content: "";
-    margin: 0;
-    width: 0;
-    height: 1px;
-    background: $color-white;
-    transition: all 0.4s;
+  &__cafe {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+      url(../img/FEND-Coffee-shop.jpg);
   }
 
-  &__animatedli:hover::after {
-    width: 100%;
-  }
-}
-
-.mobnavbar {
-  position: absolute;
-  left: 0%;
-  top: 0;
-  bottom: 0;
-  width: 100vw;
-  height: 100vh;
-  background-color: $color-black;
-  padding: 2.2rem 6.94%;
-  transition: 0.5s all;
-  transform: translateX(100%);
-
-  &-open {
-    //left: 0%; // Erik fragen
-    transform: translateX(0%);
-  }
-
-  ul {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    height: 80%;
-  }
-
-  &__burgerclose-box {
-    top: 2rem;
-    right: 2.65rem;
-    height: 10%;
-    width: 1.8rem;
-    margin-left: auto;
-  }
-
-  &__burgerclose-img {
-    height: 100%;
-    width: 100%;
+  &__origin {
+    background-image: url(../img/FEND-Coffee-beans-hand-2.jpg);
   }
 }
