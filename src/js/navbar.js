@@ -1,27 +1,39 @@
 function toggleNavbar() {
-    const toggleButton = (document.querySelector(".btn-toggle-open") || document.querySelector(".btn-toggle-close"));
+    const menuButton = document.querySelector(".btn-toggle-open");
+    const closeButton = document.querySelector(".btn-toggle-close");
     const navbarLinks = document.querySelector(".mobnavbar");
 
-    toggleButton.addEventListener("click", () => {
-        navbarLinks.classList.toggle(".mobnavbar-open");
+let isMenuOpen = false;
+
+    menuButton.addEventListener("click", () => {
+        console.log("hallo Click");
+        if(!isMenuOpen) {           
+            navbarLinks.classList.add("mobnavbar-open");
+            isMenuOpen = true;
+        }
         
     });
-    console.log("Variante: toggle");
+    closeButton.addEventListener("click", () => {
+        if(isMenuOpen) {           
+            navbarLinks.classList.remove("mobnavbar-open");
+            isMenuOpen = false;
+        }
+    });
+    console.log("Variante: if-else");
 }
 
-// function toggleNavbar() {
-//     const toggleButton = (document.querySelector(".btn-toggle-open") || document.querySelector(".btn-toggle-close"));
-//     const navbarLinks = document.querySelector(".mobnavbar");
-
-//     toggleButton.addEventListener("click", () => {
-        
-//         if(navbarLinks.classList.contains("mobnavbar-open")) {
-//             navbarLinks.classList.remove("mobnavbar-open");
-//         } else {
-//             navbarLinks.classList.add("mobnavbar-open")
-//         }
-//     });
-//     console.log("Variante: if-else");
-// }
-
 export default toggleNavbar
+
+
+window.onscroll = function () { 
+    const myNav = document.querySelector(".navbar");
+    console.log("Let's roll!")
+    if (document.body.scrollTop >= 200 ) {
+        myNav.classList.add("nav-colored");
+        myNav.classList.remove("nav-transparent");
+    } 
+    else {
+        myNav.classList.add("nav-transparent");
+        myNav.classList.remove("nav-colored");
+    }
+}

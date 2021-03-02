@@ -131,7 +131,7 @@ body {
 
 .mobnavbar {
   position: absolute;
-  left: 100%;
+  left: 0%;
   top: 0;
   bottom: 0;
   width: 100vw;
@@ -142,7 +142,7 @@ body {
   transform: translateX(100%);
 
   &-open {
-    // left: 0%; // Erik fragen
+    //left: 0%; // Erik fragen
     transform: translateX(0%);
   }
 
