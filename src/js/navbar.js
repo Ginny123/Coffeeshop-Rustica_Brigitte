@@ -3,7 +3,7 @@ function toggleNavbar() {
     const closeButton = document.querySelector(".btn-toggle-close");
     const navbarLinks = document.querySelector(".mobnavbar");
 
-let isMenuOpen = false;
+    let isMenuOpen = false;
 
     menuButton.addEventListener("click", () => {
         console.log("hallo Click");
@@ -39,3 +39,40 @@ export default toggleNavbar
 // .nav-colored { background-color:#000; }
 // .nav-transparent { background-color:transparent;}
 // }
+
+function scrollbar() {
+    let yOffset = window.pageYOffset;
+    let isNavbarColored = true;
+    const myNavbar = document.querySelector(".navbar");
+    const s1 = document.querySelector(".s1").offsetTop;
+
+    window.addEventListener("scroll", () => {      
+        
+        
+        if(yOffset > s1 && !isNavbarColored)
+        {
+          document.querySelector('nav').style.background = "red";
+        }
+
+        if(yOffset > s2 && yOffset < s3 )
+        {
+          document.getElementById('nav').style.background = "green";
+        }
+
+        if(yOffset > s3 && yOffset < s4 )
+        {
+          document.getElementById('nav').style.background = "blue";
+        }
+
+        if(yOffset > s4 && yOffset < s5 )
+        {
+          document.getElementById('nav').style.background = "violet";
+        }
+
+        if(yOffset > s5)
+        {
+          document.getElementById('nav').style.background = "brown";
+        }
+    });
+}
+window.onload = init();
