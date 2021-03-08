@@ -1,3 +1,4 @@
+/*eslint-disable*/
 function toggleNavbar() {
     const menuButton = document.querySelector(".btn-toggle-open");
     const closeButton = document.querySelector(".btn-toggle-close");
@@ -22,7 +23,7 @@ function toggleNavbar() {
     console.log("Variante: if-else");
 }
 
-export default toggleNavbar
+export default toggleNavbar;
 
 
 // window.onscroll = function () { 

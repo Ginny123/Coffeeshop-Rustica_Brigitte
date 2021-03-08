@@ -15,8 +15,12 @@
     width: 50%;
     left: 0;
 
+    &--element.error input {
+      background-color: $color-red 30%;
+    }
+
     label {
-      columns: $color-anthra;
+      color: $color-anthra;
     }
 
     input,
@@ -28,19 +32,25 @@
       margin-top: 2rem;
       margin-bottom: 8rem;
       width: 100%;
+      outline: none;
     }
 
     textarea {
       height: 20rem;
     }
 
-    input:invalid {
-      background-color: rgba(255, 0, 0, 0.3);
-    }
+    // input:invalid {
+    //   background-color: rgba(255, 0, 0, 0.3);
+    //   color: #ff0000;
+    // }
 
-    input:active {
-      border: none;
+    input:focus {
       background-color: $color-grey-light;
+      color: $color-anthra;
     }
   }
+}
+.check-valid {
+  background-color: rgba(255, 0, 0, 0.3);
+  color: #ff0000;
 }

@@ -7,5 +7,7 @@
 // console.log(result);
 
 import toggleNavbar from "./navbar";
+import formValid from "./contact";
 
 toggleNavbar();
+formValid();

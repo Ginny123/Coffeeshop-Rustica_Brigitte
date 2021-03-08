@@ -227,3 +227,8 @@ textarea {
   @include roboto-400(1.8);
   color: $color-grey-medlight;
 }
+
+input:focus::placeholder {
+  @include roboto-400(1.8);
+  color: $color-anthra;
+}

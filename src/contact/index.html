@@ -19,60 +19,72 @@
             <span>Du hast Fragen?</span><br /><span>Schreib uns gern!</span>
           </h2>
         </div>
-  
-        <form method="GET" action="#" class="contact__formular">
-          <div class="contact__--formular--elements"></div>
-            <div class="contact__formular--input">
-              <label for="name">Name*</label>
-              <input
-                class="form-control contact__formular--inputField"
-                type="text"
-                name="name"
-                placeholder="Name"
-              />
-            </div>
-  
-            <div class="contact__formular--input">
-              <label for="mail">E-Mail*</label>            
-              <input
-                class="formControl contact__formular--inputField"
-                type="email"
-                name="email"
-                class="contact__formular--input-field"
-                placeholder="E-Mail"
-              />
-            </div>
-  
-            <div class="contact__formular--input">
-              <label for="phone">Telefonnummer</label>            
-              <input
-                class="contact__formular--formControl contact__formular--inputField"
-                type="text"
-                name="telefon"
-                placeholder="Telefonnummer"
-              />
-            </div>
-  
-            betreff
-  
-            <div class="contact__formular--input">
-              <label for="msg">Deine Nachricht</label>            
-              <textarea
-                class="formControl contact__formular--inputField"
-                type="text"
-                name="nachricht"
-                placeholder="Was hast Du auf dem Herzen?"
-              />
-            </div>
-            Datenschutzerklärung
-            <div class="button">
-              <button type="submit" class="btn">abschicken</button>
-            </div>
-            
+
+        <form method="GET" action="#" class="contact__formular" name="signup">
+          <div class="contact__formular--element">
+            <label for="name">Name*</label>
+            <input
+              class="input-name"
+              type="text"
+              name="name"
+              placeholder="Name"
+            />
           </div>
+
+          <div class="contact__formular--element">
+            <label for="mail">E-Mail*</label>
+            <input
+              class="input-mail"
+              type="email"
+              name="email"
+              class="contact__formular--input-field"
+              placeholder="E-Mail"
+            />
+          </div>
+
+          <div class="contact__formular--element">
+            <label for="phone">Telefonnummer</label>
+            <input
+              class="input-phone"
+              type="text"
+              name="telefon"
+              placeholder="Telefonnummer"
+            />
+          </div>
+
+          <div class="contact__formular--element success">
+            <ul>
+              <li>Betreff</li>
+              <li>Fragen zur Lieferung</li>
+              <li>Fragen zum Produkt</li>
+              <li>Vertriebsfragen</li>
+              <li>einfach nur so!</li>
+            </ul>
+          </div>
+
+          <div class="contact__formular--element error">
+            <label for="msg">Deine Nachricht</label>
+            <textarea
+              class="formControl contact__formular--inputField"
+              type="text"
+              name="nachricht"
+              placeholder="Was hast Du auf dem Herzen?"
+            />
+          </div>
+
+          <div class="contact__formular--element">
+            <input type="checkbox" name="agree" />
+            <label for="agree">Ich akzeptiere die Datenschutzerklärung</label>
+          </div>
+
+          <!-- <div class="contact__formular--element button"> -->
+          <button type="submit" class="btn btn-dark btn-mail" id="btnmail">
+            abschicken
+          </button>
+          <!-- </div> -->
         </form>
       </div>
-    </section>    
+    </section>
     <script src="../js/contact.js"></script>
   </body>
   <include src="footer.html"></include>

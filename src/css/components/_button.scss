@@ -1,4 +1,10 @@
 button {
+  //
+  box-sizing: border-box;
+}
+
+.btn-toggle-open,
+.btn-toggle-close {
   background: none;
   color: inherit;
   border: none;
